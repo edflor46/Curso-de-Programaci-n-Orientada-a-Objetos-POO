@@ -1,8 +1,11 @@
-function Car(license, drive){
-    this.id;
-    this.license = license;
-    this.drive = drive;
-    this.passenger;
+class Car{
+    constructor (license, drive){
+
+        this.id;
+        this.license = license;
+        this.drive = drive;
+        this.passenger;
+    }
 }
 
 Car.prototype.printDataCar = function(){
