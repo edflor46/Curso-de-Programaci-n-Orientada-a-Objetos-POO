@@ -5,3 +5,4 @@ function Account(name, documemt){
     this.email;
     this.password;
 }
+

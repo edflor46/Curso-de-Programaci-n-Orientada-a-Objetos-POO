@@ -4,3 +4,10 @@ function Car(license, drive){
     this.drive = drive;
     this.passenger;
 }
+
+Car.prototype.printDataCar = function(){
+    console.log(this.drive);
+    console.log(this.drive.name);
+    console.log(this.drive.document);
+
+}
