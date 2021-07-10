@@ -1,12 +1,62 @@
 public class Car {
-    Integer id;
-    String license;
-    String driver;
-    Integer passenger;
 
+    private Integer id;
+    private String license;
+    private Account driver;
+    private Integer passenger;
+
+    /* -------------------------------------------------------------------------- */
+    /*                                 Constructor                                */
+    /* -------------------------------------------------------------------------- */
+    public Car(String license, Account driver) {
+        this.license = license;
+        this.driver = driver;
+    }
+
+    /* -------------------------------------------------------------------------- */
+    /*                             Metodo Imprimir car                            */
+    /* -------------------------------------------------------------------------- */
     void printDataCar() {
-      
+        if (passenger != null) {
             System.out.println(
-                    "Licence: " + license + " " + "Name Driver: " + driver);
+                    "Licence: " + license + "\n" + "Name Driver: " + driver.name + "\n" + "Passengers: " + passenger);
+        }
+    }
+
+    /* -------------------------------------------------------------------------- */
+    /*                                  GET y SET                                 */
+    /* -------------------------------------------------------------------------- */
+    public void setPassenger(int passenger) {
+        if (passenger == 4) {
+
+            this.passenger = passenger;
+        } else {
+            System.out.println("Necesitas asignar 4 pasajeros");
+        }
+
+    }
+
+    public Integer getId() {
+        return id;
+    }
+
+    public void setId(Integer id) {
+        this.id = id;
+    }
+
+    public String getLicense() {
+        return license;
+    }
+
+    public void setLicense(String license) {
+        this.license = license;
+    }
+
+    public Account getDriver() {
+        return driver;
+    }
+
+    public void setDriver(Account driver) {
+        this.driver = driver;
     }
 }
