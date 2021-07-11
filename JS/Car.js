@@ -5,6 +5,7 @@ class Car{
         this.license = license;
         this.drive = drive;
         this.passenger;
+        
     }
 }
 
